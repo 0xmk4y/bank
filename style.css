@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,300&display=swap');
+*{
+    font-family: 'Roboto', sans-serif;
+    /* font-size: 18px; */
+    /* font-weight: 400; */
+}
+
+
+header{
+    background-color: #fff;
+    border-bottom: 1px solid #d4d4d4;
+    outline: none;
+}
+
+input{
+    overflow: visible;
+    height: 48px;
+    border-radius: 4px;
+    border: 1px solid #687680;
+    background-color: #fff;
+    font-family: Optimist,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    line-height: 1.5em;
+    /* font-weight: 400; */
+    color: #273b49;
+    /* padding: 12px; */
+    box-sizing: border-box;
+  }
+
+input:focus{
+    outline: 0;
+    border: 1px solid #0d74af;
+    box-shadow: 0 0 0 1px #0d74af inset ;
+}
+.card{
+    border: 1px solid #d6dee2;
+}
+.signin{
+    background: #128020;
+    /* color: white; */
+}
+.blue{
+    cursor: pointer;
+    white-space: nowrap;
+    color: #0d74af;
+    font-size: 16px;
+    font-weight: 600;
+}
+.highlight{
+    color: #0d74af;
+}
+
+.footer li a{
+    border-right: 1px solid grey;
+}
+.footer-main{
+    border-top: 1px solid #d6dee2;
+}
+ul li a:hover{
+    text-decoration: underline;
+}
