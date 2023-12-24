@@ -59,3 +59,19 @@ input:focus{
 ul li a:hover{
     text-decoration: underline;
 }
+
+
+/* mobile */
+/* .up-card{
+    transform: translateY(-32px);
+    top: 0px;
+    background-color: #fff;
+    border: 1px solid #d4d4d4;
+    text-decoration: none;
+    position: relative;
+    border-radius: 4px;
+    color: #141414;
+    line-height: 1.5;
+
+
+} */
