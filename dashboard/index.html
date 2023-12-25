@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="capital one login, capital one credit card login, capitalone, capitalone login, capital one 360 login">
+    <base href="">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: #01405f;">
+    
+
+<nav class="fixed top-0 z-50 w-full bg-white border-b border-gray-200  ">
+  <div class="px-3 py-3 lg:px-5 lg:pl-3">
+    <div class="flex items-center justify-between">
+      <div class="flex items-center justify-start rtl:justify-end">
+        <button data-drawer-target="logo-sidebar" data-drawer-toggle="logo-sidebar" aria-controls="logo-sidebar" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200   ">
+            <span class="sr-only">Open sidebar</span>
+            <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+               <path clip-rule="evenodd" fill-rule="evenodd" d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"></path>
+            </svg>
+         </button>
+        <a href="https://flowbite.com" class="flex ms-2 md:me-24">
+          <img src="../capital-one-logo.svg" class="h-8 me-3" alt="Capitalone Logo" />
+        </a>
+      </div>
+      <div class="flex items-center">
+          <div class="flex items-center ms-3">
+            <div>
+              <button type="button" class="flex text-sm bg-gray-800 rounded-full focus:ring-4 focus:ring-gray-300 " aria-expanded="false" data-dropdown-toggle="dropdown-user">
+                <span class="sr-only">Open user menu</span>
+                <img class="w-8 h-8 rounded-full" src="https://flowbite.com/docs/images/people/profile-picture-5.jpg" alt="user photo">
+              </button>
+            </div>
+            <div class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded shadow  " id="dropdown-user">
+              <div class="px-4 py-3" role="none">
+                <p class="text-sm text-gray-900 " role="none">
+                  Neil Sims
+                </p>
+                <p class="text-sm font-medium text-gray-900 truncate " role="none">
+                  neil.sims@flowbite.com
+                </p>
+              </div>
+              <ul class="py-1" role="none">
+                <li>
+                  <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100   " role="menuitem">Checking...0096</a>
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100   " role="menuitem">Savings...3886</a>
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100   " role="menuitem">Credit Cards...9794</a>
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100   " role="menuitem">Loans</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+</nav>
+
+<aside id="logo-sidebar" class="fixed top-0 left-0 z-40 w-64 h-screen pt-20 transition-transform -translate-x-full sm:translate-x-0  " aria-label="Sidebar" style="background-color: #026597;">
+   <div class="h-full px-3 pb-4 overflow-y-auto ">
+      <ul class="space-y-2 font-medium">
+         <li>
+            <a href="#" class="flex items-center p-2 text-white rounded-lg  hover:bg-gray-100  group">
+               <svg class="w-5 h-5 text-gray-500 transition duration-75  group-hover:text-white " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 21">
+                  <path d="M16.975 11H10V4.025a1 1 0 0 0-1.066-.998 8.5 8.5 0 1 0 9.039 9.039.999.999 0 0 0-1-1.066h.002Z"/>
+                  <path d="M12.5 0c-.157 0-.311.01-.565.027A1 1 0 0 0 11 1.02V10h8.975a1 1 0 0 0 1-.935c.013-.188.028-.374.028-.565A8.51 8.51 0 0 0 12.5 0Z"/>
+               </svg>
+               <span class="ms-3">Checking...0096</span>
+            </a>
+         </li>
+         <li>
+            <a href="#" class="flex items-center p-2 text-white rounded-lg  hover:bg-gray-100  group">
+               <svg class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75  group-hover:text-white " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 18">
+                  <path d="M6.143 0H1.857A1.857 1.857 0 0 0 0 1.857v4.286C0 7.169.831 8 1.857 8h4.286A1.857 1.857 0 0 0 8 6.143V1.857A1.857 1.857 0 0 0 6.143 0Zm10 0h-4.286A1.857 1.857 0 0 0 10 1.857v4.286C10 7.169 10.831 8 11.857 8h4.286A1.857 1.857 0 0 0 18 6.143V1.857A1.857 1.857 0 0 0 16.143 0Zm-10 10H1.857A1.857 1.857 0 0 0 0 11.857v4.286C0 17.169.831 18 1.857 18h4.286A1.857 1.857 0 0 0 8 16.143v-4.286A1.857 1.857 0 0 0 6.143 10Zm10 0h-4.286A1.857 1.857 0 0 0 10 11.857v4.286c0 1.026.831 1.857 1.857 1.857h4.286A1.857 1.857 0 0 0 18 16.143v-4.286A1.857 1.857 0 0 0 16.143 10Z"/>
+               </svg>
+               <span class="flex-1 ms-3 whitespace-nowrap">Savings...3886</span>
+               <span class="inline-flex items-center justify-center px-2 ms-3 text-sm font-medium text-gray-800 bg-gray-100 rounded-full  ">Pro</span>
+            </a>
+         </li>
+         <li>
+            <a href="#" class="flex items-center p-2 text-white rounded-lg  hover:bg-gray-100  group">
+               <svg class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75  group-hover:text-white " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="m17.418 3.623-.018-.008a6.713 6.713 0 0 0-2.4-.569V2h1a1 1 0 1 0 0-2h-2a1 1 0 0 0-1 1v2H9.89A6.977 6.977 0 0 1 12 8v5h-2V8A5 5 0 1 0 0 8v6a1 1 0 0 0 1 1h8v4a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-4h6a1 1 0 0 0 1-1V8a5 5 0 0 0-2.582-4.377ZM6 12H4a1 1 0 0 1 0-2h2a1 1 0 0 1 0 2Z"/>
+               </svg>
+               <span class="flex-1 ms-3 whitespace-nowrap">Credit Cards...9794</span>
+               <span class="inline-flex items-center justify-center w-3 h-3 p-3 ms-3 text-sm font-medium text-blue-800 bg-blue-100 rounded-full  ">3</span>
+            </a>
+         </li>
+         <li>
+            <a href="#" class="flex items-center p-2 text-white rounded-lg  hover:bg-gray-100  group">
+               <svg class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75  group-hover:text-white " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 18">
+                  <path d="M14 2a3.963 3.963 0 0 0-1.4.267 6.439 6.439 0 0 1-1.331 6.638A4 4 0 1 0 14 2Zm1 9h-1.264A6.957 6.957 0 0 1 15 15v2a2.97 2.97 0 0 1-.184 1H19a1 1 0 0 0 1-1v-1a5.006 5.006 0 0 0-5-5ZM6.5 9a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9ZM8 10H5a5.006 5.006 0 0 0-5 5v2a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1v-2a5.006 5.006 0 0 0-5-5Z"/>
+               </svg>
+               <span class="flex-1 ms-3 whitespace-nowrap">Loans...2284</span>
+            </a>
+         </li>
+         <li>
+            <a href="#" class="flex items-center p-2 text-white rounded-lg  hover:bg-gray-100  group">
+               <svg class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75  group-hover:text-white " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 20">
+                  <path d="M17 5.923A1 1 0 0 0 16 5h-3V4a4 4 0 1 0-8 0v1H2a1 1 0 0 0-1 .923L.086 17.846A2 2 0 0 0 2.08 20h13.84a2 2 0 0 0 1.994-2.153L17 5.923ZM7 9a1 1 0 0 1-2 0V7h2v2Zm0-5a2 2 0 1 1 4 0v1H7V4Zm6 5a1 1 0 1 1-2 0V7h2v2Z"/>
+               </svg>
+               <span class="flex-1 ms-3 whitespace-nowrap">Rewards and Deals</span>
+            </a>
+         </li>
+      </ul>
+   </div>
+</aside>
+
+
+
+
+
+<main class="p-2 md:ml-64 h-auto pt-20">
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 mb-4">
+    <div class= "bg-white border-gray-700 rounded-lg h-[200px] md:h-[200px] p-2">
+      <div class="mb-2 border-0 border-b-2 pb-2 md:pb-4">
+        <p class="text-[24px] font-bold">My Balance</p>
+        <p class="text-[32px]" style="color: #026597;">$4,200.20</p>
+        <p class="">Available balance</p>
+      </div>
+
+      <div class="flex justify-between p-2 text-[12px] md:text-[16px] mt-4">
+        <p>Account number & Routing Number</p>
+        <a href="" style="color: #026597;">ACCOUNT DETAILS</a>
+      </div>
+    </div>
+    
+
+    <div class="bg-white rounded-lg border-gray-700 p-2">
+      <p class="text-[24px] font-bold mb-2">Upcoming Transactions</p>
+
+      <div class="flex flex-col">
+        <!-- upcoming 1 -->
+        <div class="border-0 border-b-2 pb-2">
+          <div class="flex justify-between items-center">
+            <div class="flex items-center space-x-2 p-2">
+              <img class="w-8 h-8 rounded-full" src="https://flowbite.com/docs/images/people/profile-picture-5.jpg" alt="user photo">
+              <div>
+                <p>Walmart</p>
+                <p>Groceries</p>
+              </div>
+            </div>
+  
+            <div>
+              <p>-120.33</p>
+              <p>Dec 23, 2023</p>
+            </div>
+          </div>
+        </div>
+          <!-- upcoming 2 -->
+          <div class="border-0 border-b-2 pb-2">
+            <div class="flex justify-between items-center">
+              <div class="flex items-center space-x-2 p-2">
+                <img class="w-8 h-8 rounded-full" src="https://flowbite.com/docs/images/people/profile-picture-5.jpg" alt="user photo">
+                <div>
+                  <p>Walmart</p>
+                  <p>Groceries</p>
+                </div>
+              </div>
+    
+              <div>
+                <p>-120.33</p>
+                <p>Dec 23, 2023</p>
+              </div>
+              
+            </div>
+          </div>   
+
+        <!-- upcoming 3 -->
+        <div class="border-0 border-b-2 pb-2">
+          <div class="flex justify-between items-center">
+            <div class="flex items-center space-x-2 p-2">
+              <img class="w-8 h-8 rounded-full" src="https://flowbite.com/docs/images/people/profile-picture-5.jpg" alt="user photo">
+              <div>
+                <p>Walmart</p>
+                <p>Groceries</p>
+              </div>
+            </div>
+  
+            <div>
+              <p>-120.33</p>
+              <p>Dec 23, 2023</p>
+            </div>
+            
+          </div>
+        </div>
+
+      <!-- upcoming 4 -->
+      <div class="border-0 border-b-2 pb-2">
+        <div class="flex justify-between items-center">
+          <div class="flex items-center space-x-2 p-2">
+            <img class="w-8 h-8 rounded-full" src="https://flowbite.com/docs/images/people/profile-picture-5.jpg" alt="user photo">
+            <div>
+              <p>Walmart</p>
+              <p>Groceries</p>
+            </div>
+          </div>
+
+          <div>
+            <p>-120.33</p>
+            <p>Dec 23, 2023</p>
+          </div>
+          
+        </div>
+      </div>
+
+      <!-- upcoming 5 -->
+      <div class="border-0 border-b-2 pb-2">
+        <div class="flex justify-between items-center">
+          <div class="flex items-center space-x-2 p-2">
+            <img class="w-8 h-8 rounded-full" src="https://flowbite.com/docs/images/people/profile-picture-5.jpg" alt="user photo">
+            <div>
+              <p>Walmart</p>
+              <p>Groceries</p>
+            </div>
+          </div>
+
+          <div>
+            <p>-120.33</p>
+            <p>Dec 23, 2023</p>
+          </div>
+          
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+    <div class="bg-white rounded-lg border-gray-700 md:mt-[-220px] p-2">
+      <p class="text-[24px] font-bold mb-2">Recent Transactions</p>
+
+      <div class="flex flex-col">
+        <!-- Recent 1 -->
+        <div class="border-0 border-b-2 pb-2">
+          <div class="flex justify-between items-center">
+            <div class="flex items-center space-x-2 p-2">
+              <img class="w-8 h-8 rounded-full" src="https://flowbite.com/docs/images/people/profile-picture-5.jpg" alt="user photo">
+              <div>
+                <p>Walmart</p>
+                <p>Groceries</p>
+              </div>
+            </div>
+  
+            <div>
+              <p>-120.33</p>
+              <p>Dec 23, 2023</p>
+            </div>
+          </div>
+        </div>
+          <!-- Recent 2 -->
+          <div class="border-0 border-b-2 pb-2">
+            <div class="flex justify-between items-center">
+              <div class="flex items-center space-x-2 p-2">
+                <img class="w-8 h-8 rounded-full" src="https://flowbite.com/docs/images/people/profile-picture-5.jpg" alt="user photo">
+                <div>
+                  <p>Walmart</p>
+                  <p>Groceries</p>
+                </div>
+              </div>
+    
+              <div>
+                <p>-120.33</p>
+                <p>Dec 23, 2023</p>
+              </div>
+              
+            </div>
+          </div>   
+
+        <!-- Recent 3 -->
+        <div class="border-0 border-b-2 pb-2">
+          <div class="flex justify-between items-center">
+            <div class="flex items-center space-x-2 p-2">
+              <img class="w-8 h-8 rounded-full" src="https://flowbite.com/docs/images/people/profile-picture-5.jpg" alt="user photo">
+              <div>
+                <p>Walmart</p>
+                <p>Groceries</p>
+              </div>
+            </div>
+  
+            <div>
+              <p>-120.33</p>
+              <p>Dec 23, 2023</p>
+            </div>
+            
+          </div>
+        </div>
+
+      <!-- Recent 4 -->
+      <div class="border-0 border-b-2 pb-2">
+        <div class="flex justify-between items-center">
+          <div class="flex items-center space-x-2 p-2">
+            <img class="w-8 h-8 rounded-full" src="https://flowbite.com/docs/images/people/profile-picture-5.jpg" alt="user photo">
+            <div>
+              <p>Walmart</p>
+              <p>Groceries</p>
+            </div>
+          </div>
+
+          <div>
+            <p>-120.33</p>
+            <p>Dec 23, 2023</p>
+          </div>
+          
+        </div>
+      </div>
+
+      <!-- Recent 5 -->
+      <div class="border-0 border-b-2 pb-2">
+        <div class="flex justify-between items-center">
+          <div class="flex items-center space-x-2 p-2">
+            <img class="w-8 h-8 rounded-full" src="https://flowbite.com/docs/images/people/profile-picture-5.jpg" alt="user photo">
+            <div>
+              <p>Walmart</p>
+              <p>Groceries</p>
+            </div>
+          </div>
+
+          <div>
+            <p>-120.33</p>
+            <p>Dec 23, 2023</p>
+          </div>
+          
+        </div>
+      </div>
+      </div>
+
+    </div>
+
+
+    <div class="bg-white rounded-lg border-gray-700 h-[200px] md:h-[220px]">
+        <div>
+          <div>
+            <p>Banking features</p>
+          </div>
+          <div class="flex items-center justify-between px-4">
+            <!-- zelle -->
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
+                <path fill="#a0f" d="M35,42H13c-3.866,0-7-3.134-7-7V13c0-3.866,3.134-7,7-7h22c3.866,0,7,3.134,7,7v22 C42,38.866,38.866,42,35,42z"></path><path fill="#fff" d="M17.5,18.5h14c0.552,0,1-0.448,1-1V15c0-0.552-0.448-1-1-1h-14c-0.552,0-1,0.448-1,1v2.5	C16.5,18.052,16.948,18.5,17.5,18.5z"></path><path fill="#fff" d="M17,34.5h14.5c0.552,0,1-0.448,1-1V31c0-0.552-0.448-1-1-1H17c-0.552,0-1,0.448-1,1v2.5	C16,34.052,16.448,34.5,17,34.5z"></path><path fill="#fff" d="M22.25,11v6c0,0.276,0.224,0.5,0.5,0.5h3.5c0.276,0,0.5-0.224,0.5-0.5v-6c0-0.276-0.224-0.5-0.5-0.5	h-3.5C22.474,10.5,22.25,10.724,22.25,11z"></path><path fill="#fff" d="M22.25,32v6c0,0.276,0.224,0.5,0.5,0.5h3.5c0.276,0,0.5-0.224,0.5-0.5v-6c0-0.276-0.224-0.5-0.5-0.5	h-3.5C22.474,31.5,22.25,31.724,22.25,32z"></path><path fill="#fff" d="M16.578,30.938H22l10.294-12.839c0.178-0.222,0.019-0.552-0.266-0.552H26.5L16.275,30.298	C16.065,30.553,16.247,30.938,16.578,30.938z"></path>
+                </svg>
+            </div>
+
+            <!-- tranfer -->
+            <div class="w-[100px]">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><g data-name="transfer money">
+                <path d="M46.3 57.63a1 1 0 0 1-.77-1.63l.52-.62a2.28 2.28 0 0 0-1.75-3.74 1 1 0 0 1 0-2h12a1 1 0 0 1 .51 1.86l-10 6a1 1 0 0 1-.51.13zm1.62-6a4.17 4.17 0 0 1 .26.46 4.29 4.29 0 0 1 .4 2l4.11-2.46z"/><path d="M44.3 51.63h-28a1 1 0 0 1 0-2h28a1 1 0 0 1 0 2zM20.3 14.63h-12a1 1 0 0 1-.51-1.86l10-6a1 1 0 0 1 1.28 1.5l-.52.62a2.28 2.28 0 0 0 1.75 3.74 1 1 0 0 1 0 2zm-8.39-2h4.77a4.17 4.17 0 0 1-.26-.46 4.29 4.29 0 0 1-.4-2z"/><path d="M48.3 14.63h-28a1 1 0 0 1 0-2h28a1 1 0 0 1 0 2zM46 43H22a1 1 0 0 1-1-1 2 2 0 0 0-2-2 1 1 0 0 1-1-1V29a1 1 0 0 1 1-1 2 2 0 0 0 2-2 1 1 0 0 1 1-1h24a1 1 0 0 1 1 1 2 2 0 0 0 2 2 1 1 0 0 1 1 1v10a1 1 0 0 1-1 1 2 2 0 0 0-2 2 1 1 0 0 1-1 1zm-23.13-2h22.26A4 4 0 0 1 48 38.13v-8.26A4 4 0 0 1 45.13 27H22.87A4 4 0 0 1 20 29.87v8.26A4 4 0 0 1 22.87 41z"/><path d="M34 39a5 5 0 1 1 5-5 5 5 0 0 1-5 5zm0-8a3 3 0 1 0 3 3 3 3 0 0 0-3-3zM25 36a2 2 0 1 1 2-2 2 2 0 0 1-2 2zm0-2zM43 36a2 2 0 1 1 2-2 2 2 0 0 1-2 2zm0-2z"/><path d="M49 47H19a5 5 0 0 1-5-5V26a5 5 0 0 1 5-5h30a5 5 0 0 1 5 5v16a5 5 0 0 1-5 5zM19 23a3 3 0 0 0-3 3v16a3 3 0 0 0 3 3h30a3 3 0 0 0 3-3V26a3 3 0 0 0-3-3z"/><path d="M15 43a5 5 0 0 1-5-5V22a5 5 0 0 1 5-5h30a5 5 0 0 1 5 5 1 1 0 0 1-1 1H19a3 3 0 0 0-3 3v16a1 1 0 0 1-1 1zm0-24a3 3 0 0 0-3 3v16a3 3 0 0 0 2 2.83V26a5 5 0 0 1 5-5h28.83A3 3 0 0 0 45 19z"/></g></svg>
+            </div>
+
+            <!-- lock card -->
+            <div class="w-[80px]">
+              <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M112.654 40.135H94.5V35.25a30.5 30.5 0 0 0-61 0v4.885H15.346a1.75 1.75 0 0 0-1.75 1.75V121.5a1.75 1.75 0 0 0 1.75 1.75h97.308a1.75 1.75 0 0 0 1.75-1.75V41.885a1.75 1.75 0 0 0-1.75-1.75zM37 35.25a27 27 0 1 1 54 0v4.885h-2.5V35.25a24.5 24.5 0 0 0-49 0v4.885H37zm48 4.885H43V35.25a21 21 0 0 1 42 0zm25.9 79.615H17.1V43.635h93.8z"/><path d="M51.5 103.229h25a1.75 1.75 0 0 0 1.685-2.223L73.14 83.014a12.462 12.462 0 1 0-18.28 0l-5.045 17.993a1.75 1.75 0 0 0 1.685 2.223zm7.008-20.263a1.75 1.75 0 0 0-.513-1.772 8.962 8.962 0 1 1 12.011 0 1.75 1.75 0 0 0-.513 1.772l4.7 16.763H53.808z"/></svg>
+            </div>
+
+            <!-- statements -->
+            <div class="w-[80px]">
+              <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M89-.02H1.75A1.75 1.75 0 0 0 0 1.73v124.54a1.75 1.75 0 0 0 1.75 1.75H89a1.75 1.75 0 0 0 1.75-1.75V1.73A1.75 1.75 0 0 0 89-.02zm-1.748 124.54H3.5V3.48h83.752zM116.75 31.986V25.4a1.75 1.75 0 0 0-1.75-1.75h-.813V18.6a4.755 4.755 0 0 0-4.75-4.75h-2.129a4.755 4.755 0 0 0-4.75 4.75v5.041h-.812A1.75 1.75 0 0 0 100 25.4v70.75a1.851 1.851 0 0 0 .078.515l5 16.25a1.75 1.75 0 0 0 1.672 1.235H110a1.75 1.75 0 0 0 1.672-1.235l5-16.25a1.851 1.851 0 0 0 .078-.515V40.8a4.421 4.421 0 0 1 2.667 4.052v17.425a1.75 1.75 0 0 0 1.75 1.75A6.841 6.841 0 0 0 128 57.193V44.854a13.01 13.01 0 0 0-11.25-12.868zm-13.25-4.84h9.754v57.667H103.5zm0 61.167h9.754V94.4H103.5zm2.559-69.713a1.251 1.251 0 0 1 1.25-1.25h2.129a1.251 1.251 0 0 1 1.25 1.25v5.041h-4.629zm2.646 92.041h-.663L104.116 97.9h8.514zm15.8-53.452a3.336 3.336 0 0 1-1.583 2.837V44.854a7.929 7.929 0 0 0-6.167-7.722v-1.616a9.517 9.517 0 0 1 7.75 9.339z"/><path d="M14.376 14.583h62a1.75 1.75 0 0 0 0-3.5h-62a1.75 1.75 0 0 0 0 3.5zM14.376 23.75h62a1.75 1.75 0 0 0 0-3.5h-62a1.75 1.75 0 1 0 0 3.5zM14.376 32.917h62a1.75 1.75 0 0 0 0-3.5h-62a1.75 1.75 0 1 0 0 3.5zM14.376 42.085h62a1.75 1.75 0 0 0 0-3.5h-62a1.75 1.75 0 1 0 0 3.5zM14.376 51.252h62a1.75 1.75 0 0 0 0-3.5h-62a1.75 1.75 0 0 0 0 3.5zM14.376 60.419h62a1.75 1.75 0 1 0 0-3.5h-62a1.75 1.75 0 1 0 0 3.5zM14.376 69.587h62a1.75 1.75 0 1 0 0-3.5h-62a1.75 1.75 0 1 0 0 3.5zM14.376 78.754h62a1.75 1.75 0 0 0 0-3.5h-62a1.75 1.75 0 1 0 0 3.5zM14.376 87.921h62a1.75 1.75 0 1 0 0-3.5h-62a1.75 1.75 0 1 0 0 3.5zM75.594 103.185l-3.8 1.9A3.255 3.255 0 0 0 65.92 104l-2.576 3.836-1.643-.677.371-2.261a3.255 3.255 0 0 0-5.3-3.024l-6.021 5.031A1.75 1.75 0 1 0 53 109.593l5.515-4.608-.3 1.8a3.241 3.241 0 0 0 1.973 3.536l2.008.827a3.222 3.222 0 0 0 1.231.243 3.267 3.267 0 0 0 2.71-1.438l2.367-3.525a3.255 3.255 0 0 0 4.56 1.933l4.094-2.047a1.75 1.75 0 0 0-1.565-3.131z"/></svg>
+            </div>
+
+          </div>
+
+
+        </div>
+    </div>
+  </div>
+  <!-- <div class="grid grid-cols-2 gap-4">
+    <div
+      class="bg-white rounded-lg border-gray-700 h-[200px] md:h-[200px]"
+    ></div>
+    <div
+      class="bg-white rounded-lg border-gray-700 h-[400px] md:h-[400px]"
+    ></div>
+  </div> -->
+</main>
+
+
+    
+    <script>
+        
+
+    </script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.1/dist/cdn.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
+</body>
+</html>

