@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" height="192" viewBox="0 0 96.0 192.0" width="96">
+ <defs>
+  <style>.cls-1{fill:%23191919;}</style>
+ </defs>
+ <title>Artboard 17 copy 2</title>
+ <g>
+  <title>background</title>
+  <rect fill="none" height="194" id="canvas_background" width="98" x="-1" y="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <g id="Your_Icons__CreditCard">
+   <path class="cls-1" d="m88,113l-80,0a4,4 0 0 0 -4,4l0,54a4,4 0 0 0 4,4l80,0a4,4 0 0 0 4,-4l0,-54a4,4 0 0 0 -4,-4zm0,4l0,12l-80,0l0,-12l80,0zm-80,54l0,-38l80,0l0,38l-80,0zm80,2l0,-2l0,0l0,2z" fill="#255f82" id="svg_1"/>
+   <path class="cls-1" d="m78,159l-22,0a2,2 0 0 0 0,4l22,0a2,2 0 0 0 0,-4z" fill="#255f82" id="svg_2"/>
+  </g>
+  <g id="svg_5">
+   <path class="cls-1" d="m88,17l-80,0a4,4 0 0 0 -4,4l0,54a4,4 0 0 0 4,4l80,0a4,4 0 0 0 4,-4l0,-54a4,4 0 0 0 -4,-4zm0,4l0,12l-80,0l0,-12l80,0zm-80,54l0,-38l80,0l0,38l-80,0zm80,2l0,-2l0,0l0,2z" id="svg_3"/>
+   <path class="cls-1" d="m78,63l-22,0a2,2 0 0 0 0,4l22,0a2,2 0 0 0 0,-4z" id="svg_4"/>
+  </g>
+ </g>
+</svg>

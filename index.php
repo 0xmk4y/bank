@@ -1,3 +1,10 @@
+<?php 
+// session_start();
+// if (!isset($_SESSION["username"])) {
+//     header("Location: ../");
+//     exit();
+// }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -81,14 +88,14 @@
     <main>
         <!-- login desktop -->
         <div class="hidden lg:block py-4">
-            <form action="" class="flex flex-row justify-center space-x-10 items-center p-4 text-[12px]" style="background-color: #f4f4f4;">
+            <form action="dashboard/index.php" method="POST" class="flex flex-row justify-center space-x-10 items-center p-4 text-[12px]" style="background-color: #f4f4f4;">
                 <div>
                     <div class="flex flex-col mb-2">
                         <label for="username">username</label>
                         <div>
                             <img class="absolute mt-2 ml-2 w-[13px] h-[16px]" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxnIGlkPSJQYWdlLTEiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGlkPSJOYXZfQ0MtQ29weSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTExMzUuMDAwMDAwLCAtMjUuMDAwMDAwKSIgZmlsbD0iIzAxMTcyOCI+PHBhdGggZD0iTTExMzguNjI5NjksMjkuMDg5OTU1NCBDMTEzOC42Mjk2OSwzMC44ODExOTU5IDExNDAuMDExOCwzMi4zMDAwMjYyIDExNDEuNzk3OCwzMi4zMDAwMjYyIEMxMTQzLjU3OTg2LDMyLjMwMDAyNjIgMTE0NC45NjU5MSwzMC44ODM4MTg1IDExNDQuOTY1OTEsMjkuMDg5OTU1NCBDMTE0NC45NjU5MSwyNy4yOTA4NDcxIDExNDMuNTczMywyNS44ODExOTU5IDExNDEuNzk3OCwyNS44ODExOTU5IEMxMTQwLjAyMjI5LDI1Ljg4MTE5NTkgMTEzOC42Mjk2OSwyNy4yOTA4NDcxIDExMzguNjI5NjksMjkuMDg5OTU1NCBMMTEzOC42Mjk2OSwyOS4wODk5NTU0IFogTTExMzcuNzA2NTMsMjkuMDg5OTU1NCBDMTEzNy43MDY1MywyNi44NTgxMTcgMTEzOS41MDgyNiwyNSAxMTQxLjc5NzgsMjUgQzExNDQuMDQ0MDYsMjUgMTE0NS44ODkwNiwyNi44MTM1MzI3IDExNDUuODg5MDYsMjkuMDg5OTU1NCBDMTE0NS44ODkwNiwzMS4zMzg4NDA4IDExNDQuMDY4OTcsMzMuMTgxMjIyMSAxMTQxLjc5NzgsMzMuMTgxMjIyMSBDMTEzOS41NDQ5OCwzMy4xODEyMjIxIDExMzcuNzA2NTMsMzEuMzU3MTk5MSAxMTM3LjcwNjUzLDI5LjA4OTk1NTQgTDExMzcuNzA2NTMsMjkuMDg5OTU1NCBaIE0xMTQxLjc5NzgsMzUuMTMyNDQxNiBDMTEzOC44MjI0NSwzNS4xMzI0NDE2IDExMzYuMzc2ODcsMzYuMTk4NTMxMyAxMTM2LjA5MSwzOS4xMTg4MDQxIEwxMTQ3LjUwNDU5LDM5LjExODgwNDEgQzExNDcuMjIwMDQsMzYuMTk3MjIgMTE0NC43NzA1MiwzNS4xMzI0NDE2IDExNDEuNzk3OCwzNS4xMzI0NDE2IEwxMTQxLjc5NzgsMzUuMTMyNDQxNiBaIE0xMTM1LDQwIEwxMTM1LjA2Mjk0LDM5LjMyOTkyMzkgQzExMzUuNDAxMjYsMzUuNjk4OTI0NyAxMTM4LjEzNDAyLDM0LjI1MjU1NyAxMTQxLjc5NzgsMzQuMjUyNTU3IEMxMTQ1LjQ1MjQsMzQuMjUyNTU3IDExNDguMTkzMDIsMzUuNjkxMDU2OSAxMTQ4LjUzMjY1LDM5LjMyOTkyMzkgTDExNDguNTk1NTksNDAgTDExMzUsNDAgWiIgaWQ9IlVzZXIiPjwvcGF0aD48L2c+PC9nPjwvc3ZnPg==" alt="">
                         </div>
-                        <input class="w-[300px] h-[30px] pl-8" type="text" name="" id="username">
+                        <input class="w-[300px] h-[30px] pl-8" type="text" name="username" id="username">
                     </div>
 
                     <div class="flex items-center space-x-2">
@@ -104,7 +111,7 @@
                         <div>
                             <img class="absolute mt-2 ml-2 w-[18px]" src="img/lock.svg" alt="">
                         </div>
-                        <input class="w-[300px] h-[30px] pl-8" type="text" name="" id="password">
+                        <input class="w-[300px] h-[30px] pl-8" type="text" name="password" id="password">
                     </div>
 
                     <div>
@@ -113,7 +120,7 @@
                 </div>
 
                 <div class="mt-2">
-                    <div style="background-color: #026597;" class="text-white font-bold text-lg text-center w-[140px]"><button>Sign In</button></div>
+                    <div style="background-color: #026597;" class="text-white font-bold text-lg text-center w-[140px]"><button type="submit" value="submit" name="submit">Sign In</button></div>
                     <div class="h-4 pt-2">
                         <a href="" class="text-blue-500 p-2">Set up online access</a>
                     </div>
