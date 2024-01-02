@@ -35,14 +35,6 @@ if (!isset($_SESSION["username"])) {
           <img src="../capital-one-logo.svg" class="h-8 me-3" alt="Capitalone Logo" />
         </a>
       </div>
-      <!-- <div class="hidden md:block">
-        <ul class="flex space-x-4">
-          <li>Savings</li>
-          <li>Credit card</li>
-          <li>Settings</li>
-          <li></li>
-        </ul>
-      </div> -->
       <div class="flex items-center">
           <div class="flex items-center ms-3">
             <div>
@@ -65,7 +57,7 @@ if (!isset($_SESSION["username"])) {
                   <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg   " role="menuitem">Account</a>
                 </li>
                 <li>
-                  <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg   " role="menuitem">Logout</a>
+                  <a href="logout.php" class="block px-4 py-2 text-sm text-gray-700 hover:bg   " role="menuitem">Logout</a>
                 </li>
               </ul>
             </div>
@@ -86,13 +78,13 @@ if (!isset($_SESSION["username"])) {
              </a>
          </li>
          <li>
-             <a href="transfer.php" class="flex items-center space-x-4 hover:underline hover:text-gray-700 transition duration-300 underline-offset-4">
+             <a onclick="denytransfer()" href="javascript:void(0);" href="transfer.php" class="flex items-center space-x-4 hover:underline hover:text-gray-700 transition duration-300 underline-offset-4">
                <img src="../img/transfer.png" alt="" class="h-[25px]">
                <p>Transfer</p>
              </a>
          </li>
          <li>
-             <a href="accounts-credits.php" class="flex items-center space-x-4 hover:underline hover:text-gray-700 transition duration-300 underline-offset-4">
+             <a onclick="denyCreditView()" href="javascript:void(0);" href="accounts-credits.php" class="flex items-center space-x-4 hover:underline hover:text-gray-700 transition duration-300 underline-offset-4">
                  <img src="../img/account.png" alt="" class="h-[25px]">
                  <p>Accounts and Credits</p>
              </a>
@@ -110,7 +102,7 @@ if (!isset($_SESSION["username"])) {
              </a>
          </li>
          <li>
-           <a href="../" class="flex items-center space-x-4 hover:underline hover:text-gray-700 transition duration-300 underline-offset-4">
+           <a href="logout.php" class="flex items-center space-x-4 hover:underline hover:text-gray-700 transition duration-300 underline-offset-4">
              <img src="../img/logout.png" alt="">
              <p>Logout</p>
            </a>
@@ -189,18 +181,6 @@ if (!isset($_SESSION["username"])) {
             </div>
 
             <div>
-                <!-- <div class="flex space-x-[20px] lg:space-x-[100px] mb-4">
-                  <div class="w-full">
-                      <p>First name</p>
-                      <p class="border rounded w-full p-[5px] text-gray-400">Christy</p>
-                  </div>
-
-                  <div class="w-full">
-                      <p>Last name</p>
-                      <p class="border rounded w-full p-[5px] text-gray-400">Love</p>
-                  </div>
-                </div> -->
-
                 <div class="mb-4">
                     <p>Username</p>
                     <p class="border rounded p-[5px] text-gray-400">christy2134</p>
@@ -219,17 +199,6 @@ if (!isset($_SESSION["username"])) {
                 <div>
                     <button class="border p-[5px] bg-[#026597] text-white rounded mt-4" onclick="resetPassword()">Reset password</button>
                 </div>
-
-              <!-- <div class="flex space-x-[20px] lg:space-x-[100px] mb-4">
-                <div class="w-full">
-                    <p>Zip code</p>
-                    <p class="border rounded w-full p-[5px] text-gray-400">12</p>
-                </div>
-
-                <div class="w-full">
-                    <p>Last name</p>
-                    <p class="border rounded w-full p-[5px] text-gray-400">Love</p>
-                </div> -->
               </div>
             </div>
         </div>

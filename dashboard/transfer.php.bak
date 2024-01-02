@@ -87,7 +87,7 @@ if (!isset($_SESSION["username"])) {
                </a>
            </li>
            <li>
-               <a href="#" class="flex items-center space-x-4 hover:underline hover:text-gray-700 transition duration-300 underline-offset-4">
+               <a onclick="denytransfer()" href="javascript:void(0);" href="#" class="flex items-center space-x-4 hover:underline hover:text-gray-700 transition duration-300 underline-offset-4">
                  <img src="../img/transfer.png" alt="" class="h-[25px]">
                  <p>Transfer</p>
                </a>

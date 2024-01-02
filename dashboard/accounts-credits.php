@@ -63,10 +63,10 @@ if (!isset($_SESSION["username"])) {
               </div>
               <ul class="py-1" role="none">
                 <li>
-                  <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg   " role="menuitem">Account</a>
+                  <a href="settings.php" class="block px-4 py-2 text-sm text-gray-700 hover:bg   " role="menuitem">Account</a>
                 </li>
                 <li>
-                  <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg   " role="menuitem">Logout</a>
+                  <a href="logout.php" class="block px-4 py-2 text-sm text-gray-700 hover:bg   " role="menuitem">Logout</a>
                 </li>
               </ul>
             </div>
@@ -87,7 +87,7 @@ if (!isset($_SESSION["username"])) {
                </a>
            </li>
            <li>
-               <a href="transfer.php" class="flex items-center space-x-4 hover:underline hover:text-gray-700 transition duration-300 underline-offset-4">
+               <a onclick="denytransfer()" href="javascript:void(0);" class="flex items-center space-x-4 hover:underline hover:text-gray-700 transition duration-300 underline-offset-4">
                  <img src="../img/transfer.png" alt="" class="h-[25px]">
                  <p>Transfer</p>
                </a>

