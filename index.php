@@ -88,7 +88,7 @@
     <main>
         <!-- login desktop -->
         <div class="hidden lg:block py-4">
-            <form action="dashboard/index.php" method="POST" class="flex flex-row justify-center space-x-10 items-center p-4 text-[12px]" style="background-color: #f4f4f4;">
+            <form action="php/index.php" method="POST" class="flex flex-row justify-center space-x-10 items-center p-4 text-[12px]" style="background-color: #f4f4f4;">
                 <div>
                     <div class="flex flex-col mb-2">
                         <label for="username">username</label>
